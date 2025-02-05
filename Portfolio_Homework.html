@@ -1,0 +1,82 @@
+<html>
+
+    <head>
+        <title>ScrollSpy</title>
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery and Popper.js (Required for Bootstrap JavaScript) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <style>
+            /* Ensure sections are large enough for scrolling effect */
+            section {
+                height: 50vh; /* 20 viewport height */
+                padding-top: 80px; /* Prevent content from hiding under navbar */
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Coding Projects</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#section1">Intro to Bootstrap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section2">Typography</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section3">Bootstrap Utillites P1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section4">Bootstrap Utillites P2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section5">Bootstrap C&S</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <section id="section1" class="bg-primary text-white">
+                <h1>Intro to Bootstrap</h1>
+                <br><br>
+                <a href="https://github.com/AaryavR/Intro_Bootstrap.git"><mark>Here is the link to the code</mark></a>
+            </section>
+
+            <section id="section2" class="bg-secondary text-white">
+                <h1>Typography</h1>
+                <br><br>
+                <a href="https://github.com/AaryavR/Typography.git"><mark>Here is the code</mark></a>
+            </section>
+
+            <section id="section3" class="bg-success text-white">
+                <h1>Bootstrap Utillites P1</h1>
+                <br><br>
+                <a href="https://github.com/AaryavR/Bootstrap_Utilities.git"><mark>Here is the code</mark></a>
+            </section>
+
+            <section id="section4" class="bg-light text-black">
+                <h1>Bootstrap Utillites P2</h1>
+                <br><br>
+                <a href="https://github.com/AaryavR/Bootstrap_Utilities_P2.git"><mark>Here is the code</mark></a>
+            </section>
+
+            <section id="section5" class="bg-dark text-white">
+                <h1>Bootstrap C&S</h1>
+                <br><br>
+                <a href="https://github.com/AaryavR/Bootstrap_C-S.git"><mark>Here is the code</mark></a>
+            </section>
+        </div>
+
+        <script>
+            $('body').scrollspy({ target: '#navbarNav', offset: 50 });
+        </script>
+
+    </body>
+
+</html>
